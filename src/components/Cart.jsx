@@ -29,24 +29,24 @@ const Cart = () => {
             <div className="card-body">
               <h5 className="card-title text-center"> &#36; {total}</h5>
               {total === 0 ? (
-                          <button
-                            type="button"
-                            className="btn btn-success btn-block btn-lg"
-                            data-mdb-ripple-color="dark"
-                          >
-                            Proceed to buy
-                          </button>
-                        ) : (
-                          <Link className="btn" to="/confirmed">
-                            <button
-                              type="button"
-                              className="btn btn-success btn-block btn-lg"
-                              data-mdb-ripple-color="dark"
-                            >
-                              Proceed to buy
-                            </button>
-                          </Link>
-                        )}
+                <button
+                  type="button"
+                  className="btn btn-success btn-block btn-lg"
+                  data-mdb-ripple-color="dark"
+                >
+                  Proceed to buy
+                </button>
+              ) : (
+                <Link className="btn" to="/confirmed">
+                  <button
+                    type="button"
+                    className="btn btn-success btn-block btn-lg"
+                    data-mdb-ripple-color="dark"
+                  >
+                    Proceed to buy
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
         </div>
